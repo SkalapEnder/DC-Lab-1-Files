@@ -1,7 +1,7 @@
 # RPC Lab — Client–Server Implementation on AWS EC2
 
 #### Alisher Berik, IT-2308, Astana IT University
-
+#### Link to video: https://youtu.be/iAN6Dxl04yU
 This project implements a minimal Remote Procedure Call (RPC) system using Python sockets and JSON.
 The system includes a **server** that exposes remote functions and a **client** that sends RPC requests
 with timeout and retry logic. The deployment runs on two separate AWS EC2 instances.
@@ -146,25 +146,8 @@ On server.py, remove # commentary before this code on ~35 line:
 
 Client triggers timeout → retries.
 
-## 8. Change parameters of functions (Optional)
 
-You also may change parameters of calling functions.
-
-From client machine:
-
-```bash
-nano rpc_client.py
-```
-
-Set your variables on 38-39 lines:
-
-```python
-38      rpc_call("add", {"a": 5, "b": 7})
-39      rpc_call("reverse_string", {"s": "hello"})
-```
-
-
-## 9. Credits
+## 10. Credits
 
 Alisher Berik, IT-2308, Astana IT University
 
